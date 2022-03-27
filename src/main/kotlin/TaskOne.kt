@@ -12,8 +12,5 @@ fun calculateCommission(amount: Int, commissionPercent: Double): Int {
     if (commission < 3500) {
         commission = 3500.0
     }
-    val commissionInt = commission.toInt()
-    return commissionInt
+    return commission.toInt()
 }
-
-//переводы с любых карт комиссия 0.75%, минимум 35 рублей.
