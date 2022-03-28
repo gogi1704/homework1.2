@@ -1,13 +1,12 @@
-val likes = 121
+val likes = 211
 
 fun main() {
     defineWord(likes)
 }
 
 fun defineWord(likes: Int) {
-    when (likes % 10) {
-        1 -> println("Человеку")
-        else -> println("Людям")
-    }
+    if (likes % 10 == 1 && likes % 100 != 11){
+        println("Человеку")
+    }else println("Людям")
 
 }
